@@ -31,9 +31,6 @@
      - Connect the anode (longer leg) of each LED to digital pins (e.g., 3, 4, 5) on the Arduino.
      - Connect the cathode (shorter leg) of each LED to the negative rail of the breadboard.
 
-   - *Power Supply ( giving power to the circuit using arduino ):*
-     - Connect the *5v* pin of arduino to the positive rail of the breadboard
-     - Connect the *Gnd* pin of the arduino to the negative rail of the breadboard
    - *Arduino Connections:*
      - Connect Arduino's 5V pin to the positive rail of the breadboard.
      - Connect Arduino's GND pin to the negative rail of the breadboard.
