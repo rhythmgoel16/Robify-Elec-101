@@ -151,6 +151,3 @@ void loop() {
   
 5. **Ultrasonic sensor giving no reading on serial monitor**
   - **Troubleshooting** Check if the trig and the echo pins of the sensor are connected to the respective digital pins of the arduino and make sure the trig and echo pins don't have their locations switched
-
-#### Conclusion:
-This documentation guides you through the process of building an intruder alarm system using Arduino Uno, ultrasonic sensor, buzzer, LEDs, and an external power supply, with all connections made on a breadboard. By following these steps and applying the troubleshooting tips, you can effectively construct and debug your intruder alarm project.
