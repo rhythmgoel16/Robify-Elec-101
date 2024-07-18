@@ -28,8 +28,12 @@
 
    - *LEDs:*
      - Insert the LEDs into the breadboard.
-     - Connect the anode (longer leg) of each LED to digital pins (e.g., 3, 4, 5) on the Arduino.
+     - Connect the anode (longer leg) of each LED to digital pins (e.g., 3, 4, 5) on the Arduino through current-limiting resistors (220 ohms recommended, though not strictly required for this setup).
      - Connect the cathode (shorter leg) of each LED to the negative rail of the breadboard.
+
+   - *Power Supply:*
+     - Connect the external power supply to the breadboard's power rails.
+     - Ensure the positive lead (+) of the power supply is connected to the positive rail and the negative lead (-) to the negative rail.
 
    - *Arduino Connections:*
      - Connect Arduino's 5V pin to the positive rail of the breadboard.
@@ -93,6 +97,7 @@ void loop() {
   delay(1000);  // Wait for a second before repeating the loop
 }
 
+
 #### Code Explanation:
 - *Variables and Constants:*
   - trigPin: Defines the digital pin for the Trig pin of the ultrasonic sensor.
@@ -137,3 +142,4 @@ void loop() {
 
 #### Conclusion:
 This documentation guides you through the process of building an intruder alarm system using Arduino Uno, ultrasonic sensor, buzzer, LEDs, and an external power supply, with all connections made on a breadboard. By following these steps and applying the troubleshooting tips, you can effectively construct and debug your intruder alarm project.
+
