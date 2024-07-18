@@ -21,27 +21,31 @@
 
 #### Arduino Code
 ```cpp
-const int LDRPin = A0; // Analog pin for LDR sensor
-const int LEDPin = 9;  // Digital pin for LED
-int LDRValue = 0;      // Variable to store LDR value
-
-void setup() {
-  pinMode(LEDPin, OUTPUT); // Set LED pin as output
-  Serial.begin(9600);      // Start serial communication for debugging
+int LDRPin=A0;
+int LEDPin=8;
+int threshold=200;
+void setup() 
+{
+Serial.begin(9600);
+pinMode(LEDPin,OUTPUT);
 }
+void loop() 
+{
+  int data=analogRead(LDRPin);
+Serial.println("");
+Serial.print("Light Sensor");
+Serial.print("value=");
+Serial.print(data);
+delay(1000);
 
-void loop() {
-  LDRValue = analogRead(LDRPin); // Read the LDR value
-  Serial.println(LDRValue);      // Print the LDR value to the serial monitor
-
-  // If ambient light is low (i.e., it is dark), turn on the LED
-  if (LDRValue < 500) {
-    digitalWrite(LEDPin, HIGH);  // Turn on LED
-  } else {
-    digitalWrite(LEDPin, LOW);   // Turn off LED
-  }
-
-  delay(1000); // Wait for a second before repeating the loop
+if(data>=threshold)
+{
+  digitalWrite(LEDPin,HIGH);
+}
+else
+{
+  digitalWrite(LEDPin,LOW);
+}
 }
 ```
 
