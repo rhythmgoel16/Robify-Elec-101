@@ -56,6 +56,7 @@ void loop() {
    - **Check Connections**: Ensure all connections are correct and secure.
    - **Check Code**: Verify that the code is uploaded correctly and the pin numbers match the connections.
    - **Check LED Orientation**: Ensure the anode and cathode of the LED are connected properly.
+   - **Check if LED is fused**: Make sure to check the led for possible fuse faults.
 
 2. **LDR Not Reading Correctly**:
    - **Check LDR Connections**: Ensure the LDR is connected properly between the 5V, A0, and GND pins.
@@ -64,5 +65,6 @@ void loop() {
 3. **Arduino Not Powering On**:
    - **Check Power Supply**: Ensure the Arduino is properly connected to a power source.
    - **Check USB Cable**: If using a USB cable, ensure it is functioning correctly.
+   - **Check the arduino board for possible faults**: While operating with the arduino board there may be possible faults so check if the board is working before creating the project.
 
 By following this documentation, you should be able to successfully assemble and program a smart street light using the provided materials. If you encounter any issues, refer to the troubleshooting section for possible solutions.
