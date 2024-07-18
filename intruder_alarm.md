@@ -93,7 +93,6 @@ void loop() {
   delay(1000);  // Wait for a second before repeating the loop
 }
 
-
 #### Code Explanation:
 - *Variables and Constants:*
   - trigPin: Defines the digital pin for the Trig pin of the ultrasonic sensor.
