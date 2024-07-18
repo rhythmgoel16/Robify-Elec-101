@@ -140,5 +140,7 @@ void loop() {
 3. **Serial Communication Issues:**
    - **Troubleshooting:** Verify baud rate (9600 in this case) matches in both code and serial monitor. Ensure Arduino is properly connected to the computer.
 
+4. **Incorrect ultrasonic sensor Readings
+
 #### Conclusion:
 This documentation guides you through the process of building an intruder alarm system using Arduino Uno, ultrasonic sensor, buzzer, LEDs, and an external power supply, with all connections made on a breadboard. By following these steps and applying the troubleshooting tips, you can effectively construct and debug your intruder alarm project.
